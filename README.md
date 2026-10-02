@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CSPC - Computer Science for Physics and Chemistry
 
 My coursework repository. Each practical is under PW<n>/Lab <X>/.
@@ -37,3 +38,32 @@ confirming the data follows the expected exponential decay law.
 The Snakemake pipeline (Snakefile) has one rule that regenerates figure.png 
 from decay_observed.csv by running plot.py, and only reruns it when the 
 input data or script changes.
+=======
+## PW2 --- Lab A
+
+### Results
+
+- Mean acceleration: -8.58 m/s²
+- Acceleration standard deviation: 28.72 m/s²
+- Largest difference in recovered position: 0.785 m
+
+### Noise observation
+
+The acceleration is much noisier than the position because differentiation amplifies measurement noise. Since acceleration is obtained by differentiating the position data twice, the noise becomes much larger.
+
+### Integration back
+
+I integrated the noisy acceleration back to velocity and then to position. The recovered position was close to the original position, with a largest difference of 0.785 m. This shows that integration suppresses some of the noise.
+
+## Bonus --- 2D Trajectory
+
+### Results
+
+- Mean speed: 23.65 m/s
+
+### Analysis
+
+The trajectory data contains the x and y positions of the object over time. I calculated the velocity components using numerical differentiation and then calculated the total speed from the x and y components.
+
+The mean speed was 23.65 m/s. I also generated a 2D trajectory plot and a speed-versus-time plot.
+>>>>>>> 43861ef (PW2 Lab A: motion analysis and bonus)
